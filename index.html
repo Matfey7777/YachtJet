@@ -4,47 +4,88 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <a href="./index.html">yachtjet</a>
+      <a class="logo" href="./index.html">yachtjet</a>
       <nav>
-        <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Yachts</a></li>
-          <li><a href="#">Reviews</a></li>
+        <ul class="navigation">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">About</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Yachts</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Reviews</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a href="#" target="_blank" rel="noopener noreferrer nofollow">in</a>
+      <ul class="social">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >in</a
+          >
         </li>
-        <li>
-          <a href="#" target="_blank" rel="noopener noreferrer nofollow">yt </a>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >yt
+          </a>
         </li>
-        <li>
-          <a href="#" target="_blank" rel="noopener noreferrer nofollow">fc</a>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer nofollow"
+            >fc</a
+          >
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>Explore the High Seas with Our Luxury Yacht Rentals</h1>
-        <p>
+      <section class="hero">
+        <h1 class="hero-title">
+          Explore the High Seas with Our Luxury Yacht Rentals
+        </h1>
+        <p class="hero-text">
           Experience the freedom and luxury of yachting on the open seas. Choose
           from our top-of-the-line yachts and embark on an unforgettable journey
           surrounded by breathtaking views and state-of-the-art amenities.
         </p>
-        <a href="#">Yacht rental</a>
+        <a class="hero-link" href="#">Yacht rental</a>
       </section>
-      <section>
-        <h2>YachtJet fleet is here to take you on the ultimate adventure</h2>
-        <p>
+      <section id="about-us">
+        <h2 class="section-title">
+          YachtJet fleet is here to take you on the ultimate adventure
+        </h2>
+        <p clas="about-us-text">
           From spacious decks to state-of-the-art technology, our yachts are
           designed to provide the perfect blend of luxury and functionality.
         </p>
-        <p>
+        <p class="about-us-description">
           Take a look at our selection below and choose the yacht that matches
           your needs and preferences.No matter which yacht you choose, our
           experienced crew will ensure that your journey is smooth and
@@ -53,47 +94,98 @@
         </p>
         <img src="./images/yacht.jpg" alt="yacht" />
       </section>
-      <section>
-        <h2>Choose your dream yacht and sail away into the sunset</h2>
-        <ul>
-          <li>
-            <img src="./images/img yaht-1.jpg" alt="yacht-1" />
-            <h3>Arrow LUXURY YAHTS</h3>
-            <ul>
-              <li>LENGTH 48m(155ft)</li>
-              <li>BUILDER Admiral</li>
-              <li>BUILT 2021</li>
-              <li>GUESTS 11 in 5 cabins</li>
-              <li>PRICE €33,500,000</li>
+      <sections id="yachts">
+        <h2 class="section-title">
+          Choose your dream yacht and sail away into the sunset
+        </h2>
+        <ul class="yacht-list">
+          <li class="yacht-list-item">
+            <img
+              src="./images/img yaht-1.jpg"
+              alt="yaht-Arrow"
+              class="yacht-list-image"
+            />
+            <h3 class="yacht-list-title">
+              Arrow <span class="yacht-list-title-type">LUXURY YAHTS</span>
+            </h3>
+            <ul class="options">
+              <li class="options-item">
+                LENGTH <span class="option-item-value">48m(155ft)</span>
+              </li>
+              <li class="options-item">
+                BUILDER <span class="option-item-value">Admiral</span>
+              </li>
+              <li class="options-item">
+                BUILT <span class="option-item-value">2021</span>
+              </li>
+              <li class="options-item">
+                GUESTS <span class="option-item-value">11 in 5 cabins</span>
+              </li>
+              <li class="options-item">
+                PRICE <span class="option-item-value">€33,500,000</span>
+              </li>
             </ul>
           </li>
-          <li>
-            <img src="./images/img yaht 2.jpg" alt="yacht-2" />
-            <h3>BENETTI OASIS 40M BO122 LUXURY YAHTS</h3>
-            <ul>
-              <li>LENGTH 41m (133ft)</li>
-              <li>SHIPYARD Benetti</li>
-              <li>BUILT 2025</li>
-              <li>GUESTS 10 in 5 cabins</li>
-              <li>PRICE €23,210,000</li>
+          <li class="yacht-list-item">
+            <img
+              src="./images/img yaht 2.jpg"
+              alt="yaht-BENETTI OASIS"
+              class="yacht-list-image"
+            />
+            <h3 class="yacht-list-title">
+              BENETTI OASIS 40M BO122
+              <span class="yacht-list-title-type">LUXURY YAHTS</span>
+            </h3>
+            <ul class="options">
+              <li class="options-item">
+                LENGTH <span class="option-item-value">41m (133ft)</span>
+              </li>
+              <li class="options-item">
+                SHIPYARD <span class="option-item-value">Benetti</span>
+              </li>
+              <li class="options-item">
+                BUILT <span class="option-item-value">2025</span>
+              </li>
+              <li class="options-item">
+                GUESTS <span class="option-item-value">10 in 5 cabins</span>
+              </li>
+              <li class="options-item">
+                PRICE <span class="option-item-value">€23,210,000</span>
+              </li>
             </ul>
           </li>
-          <li>
-            <img src="./images/img yaht-3.jpg" alt="yacht-3" />
-            <h3>BELLE ANNA LUXURY YAHTS</h3>
+          <li class="yacht-list-item">
+            <img
+              src="./images/img yaht-3.jpg"
+              alt="yaht-BELLE ANNA"
+              class="yacht-list-image"
+            />
+            <h3 class="yacht-list-title">
+              BELLE ANNA <span class="yacht-list-title-type">LUXURY YAHTS</span>
+            </h3>
+            <ul class="options">
+              <li class="options-item">
+                LENGTH <span class="option-item-value">50m(155ft)</span>
+              </li>
+              <li class="options-item">
+                SHIPYARD <span class="option-item-value">ISA</span>
+              </li>
+              <li class="options-item">
+                BUILT <span class="option-item-value">2012</span>
+              </li>
+              <li class="options-item">
+                GUESTS <span class="option-item-value">12 in 6 cabins</span>
+              </li>
+              <li class="options-item">
+                PRICE <span class="option-item-value">€21,000,000</span>
+              </li>
+            </ul>
           </li>
-          <ul>
-            <li>LENGTH 50m(155ft)</li>
-            <li>SHIPYARD ISA</li>
-            <li>BUILT 2012</li>
-            <li>GUESTS 12 in 6 cabins</li>
-            <li>PRICE €21,000,000</li>
-          </ul>
         </ul>
-        <a href="">Yacht Rental</a>
-      </section>
-      <section>
-        <h2>Benefits</h2>
+        <a href="#" class="yacht-link">Yacht rental</a>
+      </sections>
+      <section id="benefits">
+        <h2 class="sr-only">Benefits</h2>
         <ul>
           <li>
             <p>01</p>
@@ -120,8 +212,8 @@
         </ul>
         <img src="./images/Benefits-foto.jpg" alt="benefits-foto" />
       </section>
-      <section>
-        <h2>
+      <section id="reviews">
+        <h2 class="section-title">
           YachtJet take pride in providing the best possible service and
           experience to our customers
         </h2>
