@@ -7,17 +7,64 @@
   width: 472px;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 
 .rent-section-title {
   margin-bottom: 50px;
 }
 
-.rent-section-form {
+.rent-section-container {
   width: 472px;
   height: 332px;
-  background-color: #1d1b315b;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.form-input {
+  border: 1px solid #fbfbfb33;
+  border-radius: 12px;
+  padding: 18px;
+
+  background-color: transparent;
+
+  line-height: 1.28571;
+  color: #fbfbfb;
+  transition: border 250ms linear;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 1px solid #fbfbfb80;
+}
+
+.form-input::placeholder {
+  color: #fbfbfb66;
+}
+
+.form-textarea {
+  height: 116px;
+
+  border: 1px solid #fbfbfb33;
+  border-radius: 12px;
+  padding: 18px;
+
+  background-color: transparent;
+
+  line-height: 1.28571;
+  color: #fbfbfb;
+  resize: none;
+  transition: border 250ms linear;
+}
+
+.form-textarea:focus {
+  outline: none;
+  border: 1px solid #fbfbfb80;
+}
+
+.form-textarea::placeholder {
+  color: #fbfbfb66;
 }
 
 .rent-section-button {
